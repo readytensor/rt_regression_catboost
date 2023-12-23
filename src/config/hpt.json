@@ -1,0 +1,37 @@
+{
+  "num_trials": 20,
+  "hyperparameters": [
+    {
+      "name": "learning_rate",
+      "short_desc": "The gradient step",
+      "type": "real",
+      "search_type": "log-uniform",
+      "range_low": 1e-4,
+      "range_high": 1e-1
+    },
+    {
+      "name": "iterations",
+      "short_desc": "The maximum number of trees that can be built.",
+      "type": "int",
+      "search_type": "uniform",
+      "range_low": 50,
+      "range_high": 200
+    },
+    {
+      "name": "depth",
+      "short_desc": "Depth of the tree.",
+      "type": "int",
+      "search_type": "uniform",
+      "range_low": 2,
+      "range_high": 8
+    },
+    {
+      "name": "l2_leaf_reg",
+      "short_desc": "Coefficient at the L2 regularization term of the cost function",
+      "type": "real",
+      "search_type": "log-uniform",
+      "range_low": 1e-1,
+      "range_high": 10.0
+    }
+  ]
+}
